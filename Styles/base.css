@@ -11,7 +11,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    
 }
 
 header {
@@ -34,36 +33,24 @@ nav {
 }
 
 nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 
 nav a {
-    margin: 0 95px; /* Añade espacio entre los enlaces */
+    display: inline-block;
+    margin: 0 20px;
     color: #03dac6;
+    text-decoration: none;
 }
 
-
-nav a:hover, nav a:focus {
+nav a:focus {
     color: #bb86fc;
 }
 
-
-@media (hover: hover) {
-    nav a:hover {
-        color: #bb86fc;
-    }
-}
-
-
 main {
-    display: grid;
-    grid-template-columns: 1fr; /* Cambia 2fr 1fr a 1fr si es necesario */
-    gap: 30px;
-    max-width: 100%; /* Asegúrate de que el max-width esté bien */
+    display: block;
+    width: 100%;
 }
-
 
 .section {
     background-color: #1f1f1f;
@@ -81,56 +68,26 @@ main {
     padding-bottom: 5px;
 }
 
-
-.about-me-section .about-me-content {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Adjust the spacing between the image and the text */
+.about-me-section .about-me-content,
+.country-section .country-content {
+    overflow: hidden;
 }
 
-.about-me-section .about-me-content {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Espacio entre el texto y la imagen */
-    flex-direction: row-reverse; /* Para que el texto esté a la izquierda y la imagen a la derecha */
-}
-
-img.profile-image {
-    width: 80%;
+img.profile-image,
+img.country-image {
+    float: right;
+    width: 40%;
     max-width: 200px;
     height: auto;
     border-radius: 8px;
-    margin: 0; /* Sin margen inferior */
+    margin-left: 20px;
 }
 
-.about-me-content p {
-    flex: 1;
-    margin: 0; /* Elimina el margen del párrafo */
-    color: #e0e0e0; /* Mantén el color del texto */
-}
-
-
-.country-section .country-content {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Space between image and text */
-}
-
-img.country-image {
-    width: 40%;
-    height: auto;
-    border-radius: 8px;
-    margin: 0; /* Remove bottom margin */
-}
-
+.about-me-content p,
 .country-content p {
-    flex: 1;
-    margin: 0; /* Remove default margins from the paragraph */
-    color: #e0e0e0; /* Keep the text color consistent */
+    margin: 0;
+    color: #e0e0e0;
 }
-
-
-
 
 ul {
     padding-left: 20px;
@@ -143,16 +100,11 @@ ul li {
 ul li a {
     color: #03dac6;
     text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-ul li a:hover {
-    color: #bb86fc;
 }
 
 footer {
     background: #1a1a1a;
-    color:  #03dac6;
+    color: #03dac6;
     text-align: center;
     padding: 20px 0;
     margin-top: 30px;
@@ -160,16 +112,16 @@ footer {
 }
 
 @media (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-    
-    nav .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
     nav a {
-        margin: 5px 0;
+        display: block;
+        margin: 10px 0;
+    }
+    
+    img.profile-image,
+    img.country-image {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+        width: 80%;
     }
 }
