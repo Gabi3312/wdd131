@@ -54,10 +54,6 @@ nav a:hover {
 }
 
 
-nav a:focus {
-    color: #bb86fc;
-}
-
 main {
     max-width: 100%;
     display: grid;
