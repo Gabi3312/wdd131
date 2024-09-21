@@ -45,15 +45,25 @@ nav a {
 }
 
 
-nav a:hover {
+nav a:hover, nav a:focus {
     color: #bb86fc;
 }
 
+
+@media (hover: hover) {
+    nav a:hover {
+        color: #bb86fc;
+    }
+}
+
+
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr; /* Cambia 2fr 1fr a 1fr si es necesario */
     gap: 30px;
+    max-width: 100%; /* Asegúrate de que el max-width esté bien */
 }
+
 
 .section {
     background-color: #1f1f1f;
