@@ -3,63 +3,57 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Juan Gabriel Oros - Keywords related to page content">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Juan Gabriel Oros - Personal website showcasing web development resources and information about Juan Gabriel Oros">
     <meta name="author" content="Juan Gabriel Oros">
     <title>WDD 131 - Dynamic Web Fundamentals - Juan Gabriel Oros</title>
-    <link rel="stylesheet" href="styles/base.css"> 
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="scripts/getdates.js" defer></script>
   </head>
   <body>
     <div class="container">
       <header>
         <h1>WDD 131: Dynamic Web Fundamentals - Juan Gabriel Oros</h1>
-        <nav>
-          <a href="https://www.linkedin.com/in/gabi-oros-1201a3236/" target="_blank">LinkedIn</a>
-          <a href="https://byui.instructure.com/" target="_blank">I-Learn</a>
-          <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/26?lang=eng&id=p27#p27" target="_blank">Favorite Scripture</a>
-          <a href="#" target="_blank">Final Project Folder</a>
-        </nav>
       </header>
+      <nav>
+        <a href="https://www.linkedin.com/in/gabi-oros-1201a3236/">LinkedIn</a>
+        <a href="https://byui.instructure.com/">I-Learn</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/26?lang=eng&id=p27#p27">Favorite Scripture</a>
+        <a href="#">Final Project Folder</a>
+      </nav>
       <main>
-        <div class="left-column">
-          <div class="section about-me-section">
-            <div class="about-me-content">
-              <img src="Images/Myphoto.png" alt="Juan G.Oros" class="profile-image">
-              <p>Hello! My name is Gabriel Oros and I am from San Rafael, Mendoza, Argentina...</p>
-            </div>
+        <section class="about-me-section">
+          <h2>About Me</h2>
+          <div class="about-me-content">
+            <img src="images/myphoto.png" alt="Juan G.Oros" class="profile-image">
+            <p>Hello! My name is Gabriel Oros and I am from San Rafael, Mendoza, Argentina...</p>
           </div>
-          <div class="section country-section">
-            <div class="country-content">
-              <img src="Images/Mycountry.jpg" alt="My Country" class="country-image">
-              <p>San Rafael is a city in the south of the province of Mendoza, Argentina...</p>
-            </div>
+        </section>
+        <section class="country-section">
+          <h2>My Country</h2>
+          <div class="country-content">
+            <img src="images/mycountry.jpg" alt="San Rafael, Mendoza, Argentina" class="country-image">
+            <p>San Rafael is a city in the south of the province of Mendoza, Argentina...</p>
           </div>
-        </div>
-        <div class="right-column">
-          <div class="section">
-            <h2 class="section-title">Web Dev Resources</h2>
-            <ul>
-              <li><a href="#">Dev.to Community</a></li>
-              <li><a href="#">Smashing Magazine</a></li>
-              <li><a href="#">CSS Tricks</a></li>
-              <li><a href="#">W3 Schools</a></li>
-              <li><a href="#">Udemy</a></li>
-              <li><a href="#">Lorem Picsum Image Placeholder</a></li>
-            </ul>
-          </div>
-        </div>
+        </section>
+        <section class="resources-section">
+          <h2>Web Dev Resources</h2>
+          <ul>
+            <li><a href="https://dev.to/">Dev.to Community</a></li>
+            <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+            <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+            <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+            <li><a href="https://www.udemy.com/">Udemy</a></li>
+            <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
+          </ul>
+        </section>
       </main>
       <footer>
-        ©2024 🎶Juan Gabriel Oros 🎶 Argentina <br>
-        Last Modification: <span id="lastModified">20/09/2024 21:26:53</span>
+        <p>©2024 🎶Juan Gabriel Oros 🎶 Argentina</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
       </footer>
     </div>
-
-    <script>
-      document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
-    </script>
+    <script src="scripts/getdates.js"></script>
   </body>
 </html>
