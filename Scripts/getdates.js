@@ -1,5 +1,5 @@
-// Get the current year
+// Para el año actual
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-// Get the last modified date
+// Para la ultima fecha modificada
 document.getElementById("lastModified").textContent = "Last Modification: " + document.lastModified;

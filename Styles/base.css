@@ -37,7 +37,7 @@ nav {
 nav .container {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Adds more space between the nav links */
+    gap: 40px; 
 }
 
 
@@ -48,7 +48,7 @@ nav a {
     text-decoration: none;
 }
 
-/* If hover is not allowed, do not use */
+
 nav a:hover {
     color: #bb86fc;
 }
