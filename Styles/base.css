@@ -35,8 +35,11 @@ nav {
 }
 
 nav .container {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adds more space between the nav links */
 }
+
 
 nav a {
     display: inline-block;
@@ -45,14 +48,23 @@ nav a {
     text-decoration: none;
 }
 
+/* If hover is not allowed, do not use */
+nav a:hover {
+    color: #bb86fc;
+}
+
+
 nav a:focus {
     color: #bb86fc;
 }
 
 main {
-    display: block;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
+
 
 .section {
     background-color: #1f1f1f;
