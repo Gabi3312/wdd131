@@ -45,16 +45,13 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover, nav a:focus {
+nav a:focus {
     color: #bb86fc;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+    display: block;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .section {
