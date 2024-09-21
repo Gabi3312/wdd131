@@ -35,9 +35,9 @@ nav {
 }
 
 nav .container {
-    display: flex;
-    justify-content: center;
-    gap: 40px; /* Adds more space between the nav links */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 40px;
 }
 
 
