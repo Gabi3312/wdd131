@@ -2,7 +2,7 @@
 document.getElementById("lastModified").textContent = "Last Modification: " + document.lastModified;
 
 
-// Activar o desactivar el menú de navegación haciendo clic en la barra
+// Activar o desactivar el menú de navegación haciendo clic en la barra (la hamburguesa)
 document.addEventListener("DOMContentLoaded", function() {
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("nav-links");
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (navLinks.classList.contains("show")) {
             hamburger.innerHTML = "&#10005;"; // 'X' symbol
         } else {
-            hamburger.innerHTML = "&#9776;"; // simbolo de la barra
+            hamburger.innerHTML = "&#9776;"; // simbolo de la barra (la hamburguesa)
         }
     });
 });

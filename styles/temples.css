@@ -71,18 +71,22 @@ nav a:hover {
 }
 
 #nav-links.show {
-    display: block;
+    display:grid;
 }
 
 #hamburger {
-    font-size: 30px;
+    font-size: 50px;
     background: none;
     border: none;
     cursor: pointer;
     display: block;
+    position: absolute; 
+    top: 20px; 
+    right: 10px; /* Ajustamos según el diseño */
+    z-index: 100; /* Aseguramos que siempre esté visible */
 }
 
-/* Show hamburger button on smaller screens */
+/* Muestra el botón de hamburguesa (menu) en pantallas más pequeñas */
 @media (min-width: 768px) {
     #hamburger {
         display: none;
