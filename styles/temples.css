@@ -88,16 +88,17 @@ nav a:hover {
 
 /* Muestra el botón de hamburguesa (menu) en pantallas más pequeñas */
 @media (min-width: 768px) {
-    #hamburger {
-        display: none;
+    /* Asegúrate de que las reglas que cambien el layout solo se incluyan aquí */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* Cambiamos solo el número de columnas en pantallas grandes */
     }
 
     #nav-links {
-        display: flex;
-        transition: all var(--transition-effect);
+        display: flex; /* Aseguramos que los enlaces se vean en fila en pantallas grandes */
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
