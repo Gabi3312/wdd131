@@ -90,10 +90,7 @@ nav a:hover {
 /* Muestra el botón de hamburguesa (menu) en pantallas más pequeñas */
 @media (min-width: 768px) {
     
-    .gallery {
-        grid-template-columns: repeat(3, 1fr); 
-    }
-
+    
     #nav-links {
         display: flex; /* Aseguramos que los enlaces se vean en fila en pantallas grandes */
         flex-direction: row;
