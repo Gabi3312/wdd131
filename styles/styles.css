@@ -14,6 +14,7 @@ body {
     padding: 0;
     background-color: var(--background-color);
     background-color: rgb(29, 118, 202);
+    background-image:url('https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') ;
     
 }
 
@@ -93,7 +94,7 @@ strong {
 }
 
 footer {
-    background-color: rgba(19, 88, 153, 0.986);
+    background-color: rgba(172, 172, 172, 0.568);
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
