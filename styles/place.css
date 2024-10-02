@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 :root {
-    --primary-color: background-color: rgba(172, 172, 172, 0.568);
+    --primary-color:  rgba(172, 172, 172, 0.568);
     --secondary-color: rgba(0, 122, 51, 0.9); 
     --background-color: #F0F0F0;
     --text-color: #FFFFFF;
@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
-    background-color: rgba(19, 88, 153, 0.815);
+    background-color: rgb(29, 118, 202);
     
 }
 
@@ -44,7 +44,6 @@ h1 {
 }
 
 
-
 .hero img {
     width: 100%;
     height: auto;
@@ -62,7 +61,7 @@ h1 {
 
 
 .data {
-    top: 20%; /* Adjust to position over the image */
+    top: 40%; /* Adjust to position over the image */
      /* Center the data box */
     width: 30%;
     right: 65%;
@@ -73,7 +72,7 @@ h1 {
 
 
 .weather {
-    top: 80%; /* Adjust to position over the image */
+    top: 110%; /* Adjust to position over the image */
     left: 66%; /* Center the weather box */
     width: 30%;
     border: 2px solid white;
@@ -129,11 +128,14 @@ h2 {
     align-items: center;
 }
 
-.data h2 .icon, .weather h2 .icon {
-    fill: var(--text-color);
+
+.hero h2 {
+
+    display: flex;
+    justify-content: center;
+    color: #F0F0F0;
+
 }
-
-
 
 @media (max-width: 600px) {
     body {
