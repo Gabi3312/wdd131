@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Juan Gabriel Oros. Learn about web development resources, my background, my home in Argentina, and tools for building dynamic websites." />
+    <meta name="author" content="Juan Gabriel Oros">
+    <title>WDD 131 - Dynamic Web Fundamentals - Juan Gabriel Oros</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="Images/landscape.webp" media="(max-width: 600px)">
+                <source srcset="Images/landscape.webp" media="(min-width: 601px)">
+                <img src="Images/landscape.webp" alt="Madagascar landscape">
+            </picture>
+        </section>
+        <section class="data">
+            <h2>Data</h2>
+            <div class="data-content">
+                <p><strong>Area:</strong> <span>587,041 sq km</span></p>
+                <p><strong>Population:</strong> <span>27,691,018</span></p>
+                <p><strong>Capital:</strong> <span>Antananarivo</span></p>
+                <p><strong>Languages:</strong> <span>Malagasy, French</span></p>
+                <p><strong>Currency:</strong> <span>Malagasy Ariary</span></p>
+                <p><strong>Time Zone:</strong> <span>UTC+3</span></p>
+                <p><strong>Calling Code:</strong> <span>+261</span></p>
+                <p><strong>Internet TLD:</strong> <span>.mg</span></p>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <div class="weather-content">
+                <p><strong>Temperature:</strong> <span id="temperature">10 °C</span></p>
+                <p><strong>Conditions:</strong> <span>Partly Cloudy</span></p>
+                <p><strong>Wind:</strong> <span id="wind-speed">5 km/h</span></p>
+                <p><strong>Wind Chill:</strong> <span id="wind-chill">9.8 °C</span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        ©2024 🎶Juan Gabriel Oros 🎶 Argentina <br>
+       <span id="lastModified">20/09/2024 21:26:53</span>
+      </footer>
+</body>
+</html>
+  
