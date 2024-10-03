@@ -62,8 +62,7 @@ h1 {
 
 
 .data {
-    top: 40%; /* Adjust to position over the image */
-     /* Center the data box */
+    top: 15%; 
     width: 30%;
     right: 65%;
     border: 2px solid white;
@@ -73,8 +72,8 @@ h1 {
 
 
 .weather {
-    top: 110%; /* Adjust to position over the image */
-    left: 66%; /* Center the weather box */
+    top: 70%; 
+    left: 66%; 
     width: 30%;
     border: 2px solid white;
     backdrop-filter: blur(1px);
@@ -90,7 +89,7 @@ strong {
 }
 
 .weather-icon {
-    font-size: 1.5em; /* Increase size of the icon */
+    font-size: 1.5em; 
 }
 
 footer {
