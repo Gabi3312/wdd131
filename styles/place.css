@@ -60,9 +60,8 @@ h1 {
 }
 
 
-
 .data {
-    top: 15%; 
+    top: 25%; 
     width: 30%;
     right: 65%;
     border: 2px solid white;
@@ -72,7 +71,7 @@ h1 {
 
 
 .weather {
-    top: 70%; 
+    top: 75%; 
     left: 66%; 
     width: 30%;
     border: 2px solid white;
@@ -137,7 +136,7 @@ h2 {
 
     display: flex;
     justify-content: center;
-    color: #F0F0F0;
+    color: #000000;
 
 }
 
