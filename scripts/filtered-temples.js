@@ -23,90 +23,90 @@ document.addEventListener("DOMContentLoaded", function() {
 // agrega los templos automaticamente
 const temples = [
     {
-      templeName: "Birmingham",
-      location: "irmingham, USA",
-      dedicated: "2005, August, 7",
-      area: 11500,
+      templeName: "Birmingham Alabama Temple",
+      location: "Mount Olive Boulevard, Alabama 35071 United States",
+      dedicated: "3 September 2000",
+      area: 1927,
       imageUrl:
       "Images/birmingham.jpeg"
     },
     {
-      templeName: "Manti Utah",
-      location: "Manti, Utah, United States",
-      dedicated: "1888, May, 21",
-      area: 74792,
+      templeName: "Buenos Aires Argentina Temple",
+      location: "Aut. Tte. Gral. Riccheri N° 4955 B1778DUA Ciudad Evita Buenos Aires, Argentina",
+      dedicated: "17 January 1986",
+      area: 1778,
       imageUrl:
       "Images/buenos_aires.jpeg"
     },
     {
-      templeName: "Payson Utah",
-      location: "Payson, Utah, United States",
-      dedicated: "2015, June, 7",
-      area: 96630,
+      templeName: "Córdoba Argentina Temple",
+      location: "Avenida Pedro LaPlace 5647 Cordoba Argentina",
+      dedicated: "17 May 2015",
+      area: 51475009,
       imageUrl:
       "Images/cordoba.jpeg"
     },
     {
-      templeName: "Yigo Guam",
-      location: "Yigo, Guam",
-      dedicated: "2020, May, 2",
-      area: 6861,
+      templeName: "Fortaleza Brazil Temple",
+      location: "Av. Santos Dumont, 7771 De Lourdes FORTALEZA",
+      dedicated: "2 June 2019",
+      area: 77-415,
       imageUrl:
       "Images/fortaleza_temple.jpeg"
     },
     {
-      templeName: "Washington D.C.",
-      location: "Kensington, Maryland, United States",
-      dedicated: "1974, November, 19",
+      templeName: "Frankfurt Germany Temple",
+      location: "Talstraße 10 FRIEDRICHSDORF, Hessen 61381 Germany",
+      dedicated: "28 August 1987",
       area: 156558,
       imageUrl:
       "Images/frankfurt_germany_temple_lds.jpeg"
     },
     {
-      templeName: "Lima Perú",
-      location: "Lima, Perú",
-      dedicated: "1986, January, 10",
+      templeName: "Kirtland Temple",
+      location: "Kirtland, Ohio",
+      dedicated: "1836, March, 27",
       area: 9600,
       imageUrl:
       "Images/kirtland_temple.jpeg"
     },
     {
-      templeName: "Mexico City Mexico",
-      location: "Mexico City, Mexico",
-      dedicated: "1983, December, 2",
+      templeName: "Provo Utah Temple",
+      location: "2200 Temple Hill Dr Provo UT 84604-1775 United States",
+      dedicated: "9 February 1972",
       area: 116642,
       imageUrl:
       "Images/provo_city_center_temple_exterior.jpeg"
     },
 
     {
-        templeName: "Washington D.C.",
-        location: "Kensington, Maryland, United States",
-        dedicated: "1974, November, 19",
+        templeName: "Rome Italy Temple",
+        location: "Via di Settebagni 376 Rome RM Italy",
+        dedicated: "10 March 2019",
         area: 156558,
         imageUrl:
         "Images/rome_italy_temple.jpeg"
       },
       {
-        templeName: "Lima Perú",
-        location: "Lima, Perú",
-        dedicated: "1986, January, 10",
+        templeName: "Fort Collins Colorado Temple",
+        location: "2180 Majestic Dr Fort Collins CO 80528 United States",
+        dedicated: "October 16, 2016",
         area: 9600,
         imageUrl:
         "Images/fort_collins_temple_sunset.jpeg"
       },
       {
-        templeName: "Mexico City Mexico",
-        location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
+        templeName: "Houston Texas Temple",
+        location: "15725 Champion Forest Dr Klein TX 77379-7036 United States",
+        dedicated: "26 August 2000",
         area: 116642,
         imageUrl:
         "Images/houston_temple_lds.jpeg"
       },
       {
-        templeName: "Mexico City Mexico",
-        location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
+        templeName: "Logan Utah Temple",
+        location: "175 N 300 E Logan UT 84321-4720 United States",
+        dedicated: "17 May 1884",
         area: 116642,
         imageUrl:
         "Images/logan_utah_temple.jpeg"
@@ -130,7 +130,7 @@ const temples = [
     dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
 
     const area = document.createElement("p");
-    area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+    area.innerHTML = `<span class="label">Area:</span> ${temple.area} sq ft`;
 
     const img = document.createElement("img");
     img.setAttribute("src", temple.imageUrl);
