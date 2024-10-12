@@ -39,6 +39,9 @@ h1 {
 h2 {
     font-family: var(--font-primary);
     color: var(--text-color-dark);
+    text-transform: uppercase; /* Pone el texto en mayúsculas */
+    letter-spacing: 2px; /* Añade espacio entre letras para un efecto visual */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
 nav {
@@ -84,15 +87,15 @@ nav a:hover {
     display: block;
     position: absolute; 
     top: 20px; 
-    right: 10px; /* Ajustamos según el diseño */
-    z-index: 100; /* Aseguramos que siempre esté visible */
+    right: 10px; 
+    z-index: 100; /* Asegurar que siempre esté visible */
 }
 
 
 
 
 
-/* Estilo para la galería */
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -109,6 +112,17 @@ figure {
     padding: 15px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
+    color: black;
+    
+    
+}
+
+
+figcaption {
+
+    text-transform: uppercase; /* Pone el texto en mayúsculas */
+    letter-spacing: 2px; /* Añade espacio entre letras  */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
 
@@ -140,21 +154,15 @@ h3 {
 
 p {
     font-size: 1em;
-    color: #666;
+    color: #000000;
     margin: 5px 0;
 }
 
 p .label {
     font-weight: bold;
-    color: #673ab7; /* Color púrpura similar al de la imagen */
+    color: #673ab7; 
 }
 
-@media (max-width: 600px) {
-    /* Ajuste de columnas para dispositivos más pequeños */
-    .gallery {
-        grid-template-columns: 1fr;
-    }
-}
 
 
 
