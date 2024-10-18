@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    font-family:   "Bebas Neue", sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.title-header h3 {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #2b2b2b;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 10px;
+    
+}
+
+.sidebar ul li {
+    flex: 150px;
+    padding: 10px;
+    border-bottom: #444;
+    cursor: pointer;
+    text-align: center;
+    
+    
+}
+
+
+.sidebar li:hover {
+
+    background-color: #ff0000b9;
+    border-radius: 25px;
+    
+}
+
+.main-content {
+    padding: 10px;
+    flex-grow: 1;
+    
+}
+
+/* Estilos de la barra de navegación superior */
+.top-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.top-nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+}
+
+.top-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.search-bar {
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    color: white;
+    width: 100%;
+}
+
+.album-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.album-header h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.album-header p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.album-header button {
+    margin-right: 10px;
+    padding: 10px;
+    border-style:double;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #ff0000b9;
+    color: white;
+    font-size: 14px;
+}
+
+.popular-albums,
+.popular-songs {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.album-list,
+.song-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.album,
+.song {
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    height: 120px;
+}
+
+
+footer {
+    background-color: #1a1a1a;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-family:   "Bebas Neue", sans-serif;
+    border: #1a1a1a00;
+    border-top: #ffffffb9;
+    border-style:solid;
+    border-width: 1px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .sidebar ul li {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    
+    .album-header h1 {
+        font-size: 18px;
+    }
+
+
+    
+
+    .album-header p {
+        font-size: 12px;
+    }
+
+    .album-header button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .album-list,
+    .song-list {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .album,
+    .song {
+        height: 100px;
+    }
+
+    .sidebar {
+        background-color: #2b2b2b;
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        
+        
+    }
+
+
+}
