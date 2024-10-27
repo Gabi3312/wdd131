@@ -14,21 +14,26 @@ body {
     color: #ffffff;
 }
 
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #bb0000; 
+button a {
+    border: none;
     color: white; 
-    text-align: center;
-    text-decoration: none; 
-    border-radius: 5px; 
-    transition: background-color 0.3s; 
+    padding: 15px 30px; 
+    font-size: 16px; 
+    cursor: pointer;
+    overflow: hidden; 
+    outline: none;
+    text-decoration: none;
 }
 
-.button:hover {
-    background-color: #000000; 
+button a:hover {
+    transition: font-size 0.3s ease;
+    font-size: 25px;
 }
 
+button a:hover:after {
+    width: 10%; 
+    left: 0; 
+}
 
 
 .hamburger {
@@ -229,7 +234,7 @@ body {
 }
 
 .album a {
-    text-decoration: none; 
+    text-decoration: none; /* Elimina el subrayado del enlace */
     color: inherit; 
 }
 
@@ -298,7 +303,7 @@ h2 {
 
 .album:hover,
 .song:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05); /* Agrandar un poco al pasar el mouse */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); 
 }
 
